@@ -1,59 +1,97 @@
+
 body {
-    background-color: #ffb5d6;
-    color: #f438a6;
+    background-color: #ffb5d6; /* Light pink background */
+    color: #f438a6; /* Bright pink text */
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    display: flex;
-    flex-direction: column; /* Stacks elements vertically */
-    justify-content: flex-start; /* Align content at the top */
-    align-items: center; /* Center content horizontally */
-    height: 100vh;
     margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh; /* Changed height to min-height */
     text-align: center;
 }
 
+/* Header Styles */
 header {
-    margin-top: 20px; /* Space from the top */
-    font-size: 1.8em;
-    font-weight: bold;
     width: 100%;
+    padding: 20px;
+    background-color: #f438a6; /* Same as text color */
+    color: white;
+    text-align: center;
+    box-sizing: border-box; /* Added box-sizing */
 }
 
-nav {
+header h1 {
+    font-size: 2.0em; /* Adjust the title size */
+    margin: 0;
+    font-weight: bold;
+}
+
+header nav {
     margin-top: 10px;
 }
 
-nav a {
+header nav a {
     color: aliceblue;
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 15px;
+    font-size: 1.1em;
 }
 
-nav a:hover {
+header nav a:hover {
     color: deeppink;
 }
 
+/* Main Content Styles */
 main {
-    max-width: 1200px;
     width: 90%;
+    max-width: 1200px;
+    margin-top: 30px;
+    padding: 20px;
     text-align: center;
-    margin-top: 30px; /* Space between header and content */
+    box-sizing: border-box; /* Added box-sizing */
 }
 
+main h2 {
+    font-size: 2.0em;
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+/* Footer Styles */
 footer {
-    margin-top: 50px; /* Space between main content and footer */
+    width: 100%;
+    padding: 20px;
+    background-color: #f438a6; /* Same as header */
+    color: white;
+    text-align: center;
+    margin-top: auto; /* Changed margin-top to auto */
+    box-sizing: border-box; /* Added box-sizing */
 }
 
 footer nav {
     margin-bottom: 10px;
 }
 
-footer a {
+footer nav a {
     color: aliceblue;
     text-decoration: none;
+    margin: 0 10px;
 }
 
-footer a:hover {
+footer nav a:hover {
     color: deeppink;
+}
+
+footer p {
+    margin-top: 20px;
+    font-size: 1em;
 }
 
 /* Responsive Design */
@@ -62,22 +100,25 @@ footer a:hover {
         width: 95%;
     }
 
-    h2 {
+    header h1 {
         font-size: 1.8em;
+    }
+
+    main h2 {
+        font-size: 1.6em;
     }
 }
 
 @media screen and (max-width: 600px) {
-    main {
-        width: 98%;
-    }
-
     body {
         font-size: 16px;
     }
 
-    h2 {
+    main h2 {
+        font-size: 1.4em;
+    }
+
+    header h1 {
         font-size: 1.5em;
     }
 }
-
