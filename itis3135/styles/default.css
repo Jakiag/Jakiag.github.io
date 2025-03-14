@@ -1,27 +1,83 @@
-body{
+body {
     background-color: #ffb5d6;
-    text-align: center; 
     color: #f438a6;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
-}
-a {
-    color:aliceblue;
-    text-decoration: none;
-
-
-}
-
-a:hover {
-    color:deeppink;
-    text-decoration: none;
-
-}
-main {
-    text-align: left;
-    margin-left: 20%;
-    margin-right: 20%;
-}
-
-h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    flex-direction: column; /* Stacks elements vertically */
+    justify-content: flex-start; /* Align content at the top */
+    align-items: center; /* Center content horizontally */
+    height: 100vh;
+    margin: 0;
     text-align: center;
 }
+
+header {
+    margin-top: 20px; /* Space from the top */
+    font-size: 1.8em;
+    font-weight: bold;
+    width: 100%;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: aliceblue;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    color: deeppink;
+}
+
+main {
+    max-width: 1200px;
+    width: 90%;
+    text-align: center;
+    margin-top: 30px; /* Space between header and content */
+}
+
+footer {
+    margin-top: 50px; /* Space between main content and footer */
+}
+
+footer nav {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: deeppink;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 980px) {
+    main {
+        width: 95%;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        width: 98%;
+    }
+
+    body {
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+}
+
