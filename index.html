@@ -4,21 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jakia Gary Joyful Giraffe || CLT Student Home</title>
-
-
     <style>
         /* General Body Styles */
         body {
-            background-color: #ffb5d6; /* Light pink background */
-            color: #f438a6; /* Bright pink text */
+            background-color: #ffb5d6;
+            color: #f438a6;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             margin: 0;
             padding: 0;
             display: flex;
-            flex-direction: column; /* Stack elements vertically */
+            flex-direction: column;
             justify-content: flex-start;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
             text-align: center;
         }
 
@@ -26,13 +24,14 @@
         header {
             width: 100%;
             padding: 20px;
-            background-color: #f438a6; /* Same as text color */
+            background-color: #f438a6;
             color: white;
             text-align: center;
+            box-sizing: border-box;
         }
 
-        header h1 {
-            font-size: 2.0em; /* Adjust the title size */
+        h1 {
+            font-size: 2.0em;
             margin: 0;
             font-weight: bold;
         }
@@ -58,10 +57,11 @@
             max-width: 1200px;
             margin-top: 30px;
             padding: 20px;
-            text-align: center;
+            text-align: left; /* Ensuring content is left-aligned */
+            box-sizing: border-box;
         }
 
-        main h2 {
+        h2 {
             font-size: 2.0em;
             margin-bottom: 20px;
         }
@@ -75,10 +75,11 @@
         footer {
             width: 100%;
             padding: 20px;
-            background-color: #f438a6; /* Same as header */
+            background-color: #f438a6;
             color: white;
             text-align: center;
-            margin-top: 50px;
+            margin-top: auto;
+            box-sizing: border-box;
         }
 
         footer nav {
@@ -100,36 +101,99 @@
             font-size: 1em;
         }
 
+        /* Link Styles */
+        /* Link Styles */
+a {
+    color: #f438a6; /* Keep bright pink color for normal state */
+    text-decoration: none;
+    font-weight: bold; /* Make links bold for visibility */
+    transition: color 0.3s, text-decoration 0.3s; /* Smooth transition for hover effects */
+}
+
+/* General Link Styles */
+a {
+    color: #ffffff; /* Changed to white for better contrast */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+/* Hover Effect */
+a:hover {
+    color: black; /* Change to black for better visibility on hover */
+    text-decoration: underline;
+}
+
+/* Visited Links */
+a:visited {
+    color: #fffcfc; /* Keep visited links visible */
+}
+
+/* Additional Fix: If Links Are in the Header or Footer */
+header nav a, footer nav a {
+    color: white; /* Ensure header and footer links are white */
+    background-color: rgba(0, 0, 0, 0.2); /* Light background to make it pop */
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+header nav a:hover, footer nav a:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: yellow; /* Highlight effect */
+}
+
+        /* Section Styles */
+        section ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        section li {
+            margin-bottom: 5px;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
         /* Responsive Design */
         @media screen and (max-width: 980px) {
             main {
                 width: 95%;
             }
 
-            header h1 {
-                font-size: 1.8em;
+            h1 {
+                font-size: 1.8em; /* Adjust font size for smaller screens */
             }
 
-            main h2 {
-                font-size: 1.6em;
+            h2 {
+                font-size: 1.6em; /* Adjust font size for smaller screens */
+            }
+
+            main {
+                text-align: left; /* Ensure content is still left-aligned */
             }
         }
 
         @media screen and (max-width: 600px) {
             body {
-                font-size: 16px;
+                font-size: 16px; /* Smaller font size for small screens */
             }
 
-            main h2 {
-                font-size: 1.4em;
+            h2 {
+                font-size: 1.4em; /* Further decrease h2 size */
             }
 
-            header h1 {
-                font-size: 1.5em;
+            h1 {
+                font-size: 1.5em; /* Further decrease h1 size */
+            }
+
+            main {
+                text-align: left; /* Ensure content remains left-aligned */
             }
         }
     </style>
-     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -140,12 +204,12 @@
             <a href="contract.html">Contract</a>
             <a href="about.html">About</a>
             <a href="business.html">Business</a>
-        </nav>
-
-        <nav class="bad-nav">
-            <a href="stuff/SUPER%20AWESOME%20PAGE%20%3A%29%20%26%20STUFF.HTM">Crappy Page</a>
+            <a href="hobbies/hobby.html">Pilates Pals</a>
         </nav>
     
+        <nav class="bad-nav">
+            <a href="stuff/CRAPPY%20PAGE.html">Crappy Page</a>
+        </nav>
     </header>  
 
     <main>
@@ -160,9 +224,10 @@
             <a href="https://jakiag.github.io/">GitHub.io</a> |
             <a href="https://www.linkedin.com/in/jakia-gary-6414332ba/">LinkedIn</a> |
             <a href="about.html">About</a>
+            <a href="hobbies/hobby.html">Pilates Pals</a>
+
         </nav>
         <p>Page Built by <a href="https://joyfulgiraffe.com/">Joyful Giraffe Enterprises</a> &copy; 2025</p>
     </footer>
 </body>
 </html>
-

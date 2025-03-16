@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilates Pals</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Comic Sans MS', 'Chalkboard SE', cursive; /* Playful font */
+            background-color: #ffebee; /* Light pastel pink */
+            color: #d81b60; /* Deep pink text */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #f48fb1; /* Medium pastel pink header */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        nav {
+            background-color: #fce4ec; /* Lightest pastel pink nav */
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #e91e63; /* Bright pink link */
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 5px 10px;
+            border-radius: 20px; /* Rounded buttons */
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #f8bbd0; /* Lighter pastel pink hover */
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            display: none;
+            margin-bottom: 30px;
+        }
+
+        section.active {
+            display: block;
+        }
+
+        figure {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        figure img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 15px; /* Rounded image corners */
+        }
+
+        figcaption {
+            font-style: italic;
+            margin-top: 10px;
+            color: #9e9e9e; /* Gray caption */
+        }
+
+        footer {
+            background-color: #f48fb1;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position:relative;
+            bottom:0;
+            width:100%;
+        }
+
+        footer a {
+            color: #f8bbd0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Pilates Pals</h1>
+    </header>
+
+    <nav>
+        <a href="#" onclick="showSection('home')">🏠 Home</a>
+        <a href="#" onclick="showSection('about')">💖 About</a>
+        <a href="#" onclick="showSection('when')">⏰ When</a>
+        <a href="#" onclick="showSection('where')">🌸 Where</a>
+        <a href="#" onclick="showSection('how')">🎀 How</a>
+        <a href="#" onclick="showSection('why')">✨ Why</a>
+        <a href="#" onclick="showSection('ai-prompts')">🤖 AI Prompts</a>
+    </nav>
+
+    <main>
+        <section id="home" class="active">
+            <h2>Welcome to Pilates Pals!</h2>
+            <p>Pilates is a super fun way to get stronger and more flexible! It's gentle and great for everyone.</p>
+            <figure>
+                <img src="images/cutepilatespose.jpg" alt="Cute Pilates Pose" width="80%">
+                <figcaption>A sweet Pilates pose.</figcaption>
+                <p><em>Prompt: "A happy cartoon-style girl demonstrating a Pilates balance pose, balancing on one hand with her legs extended upwards, in a brightly lit space with a blue mat, showcasing strength and control."</em></p>
+            </figure>
+            <p>We'll learn how to move our bodies in a way that feels good and makes us happy!</p>
+            <p>Let's get started and have some fun together!</p>
+        </section>
+
+        <section id="about">
+            <h2>Our Pilates Story</h2>
+            <p>Pilates was created by a super smart person named Joseph Pilates. He wanted everyone to feel strong and healthy!</p>
+            <figure>
+                <img src="images/joseph-pilates.jpg" alt="Joseph Pilates" width="80%">
+                <figcaption> Joseph Pilates.</figcaption>
+                <p><em>Prompt: Joseph Pilates, captured in a vintage photograph, demonstrating a challenging side-leaning Pilates exercise on a specialized apparatus, showcasing his innovative fitness methods.</em></p>
+            </figure>
+            <p>He made up lots of fun exercises that help our bodies feel super good!</p>
+            <p>We're going to learn all his special moves together!</p>
+        </section>
+
+        <section id="when">
+            <h2>Perfect Pilates Times</h2>
+            <p>You can do Pilates whenever you want! Morning or night, it's always a good time!</p>
+            <figure>
+                <img src="images/morning-pilates.jpg" alt="Cute Morning Pilates" width="80%">
+                <figcaption>A happy morning Pilates.</figcaption>
+                <p><em>Prompt: "A girl performing a Pilates warrior pose against a vibrant sunset, embodying strength and tranquility with the sun's warm glow."</em></p>
+            </figure>
+            <p>If you do it in the morning, you'll feel super energized all day!</p>
+            <p>If you do it at night, you'll sleep like a baby!</p>
+        </section>
+
+        <section id="where">
+            <h2>Magical Pilates Places</h2>
+            <p>You can do Pilates anywhere! At home, in a park, or even in a super cute studio!</p>
+            <figure>
+                <img src="images/studio.jpg" alt="Cute Pilates Studio" width="80%">
+                <figcaption>A magical Pilates place.</figcaption>
+                <p><em>Prompt: "A bright, modern Pilates studio featuring rows of sleek reformers, minimalist decor, and soft, natural lighting, creating a serene and focused workout environment."</em></p>
+            </figure>
+            <p>Anywhere you feel comfy is perfect for Pilates!</p>
+            <p>Let's make our own special Pilates place!</p>
+        </section>
+
+        <section id="how">
+            <h2>Pilates Fun Moves</h2>
+            <p>Pilates is all about moving our bodies in a gentle and fun way!</p>
+            <figure>
+                <img src="images/fun-pilates.jpg" alt="Pilates Exercise" width="80%">
+                <figcaption>A fun Pilates move.</figcaption>
+                <p><em>Prompt: "Check out this awesome Pilates move! A girl's showing off her flexibility, holding one leg way up high while the other points forward like she's about to take off!"</em></p>
+            </figure>
+            <p>We'll learn how to breathe and move together, like a dance!</p>
+            <p>It's like playing, but for our bodies!</p>
+        </section>
+
+        <section id="why">
+            <h2>Why We Love Pilates</h2>
+            <p>Pilates makes us feel super strong and happy! It's like a hug for our bodies!</p>
+            <figure>
+                <img src="images/happy-energized.jpg" alt="Cute Pilates Benefits" width="80%">
+                <figcaption>A happy Pilates pal.</figcaption>
+                <p><em>Prompt: "A women feeling happy and energized during a Pilates session."</em></p>
+            </figure>
+            <p>It helps us stand tall and feel super confident!</p>
+            <p>Let's all feel amazing together!</p>
+        </section>
+
+        <section id="ai-prompts">
+            <h2>AI Prompts Used</h2>
+            <p>All images were generated using AI.</p>
+            <ul>
+                <li>Home: "A happy cartoon-style girl demonstrating a Pilates balance pose, balancing on one hand with her legs extended upwards, in a brightly lit space with a blue mat, showcasing strength and control."</li>
+                <li>About: "Joseph Pilates, captured in a vintage photograph, demonstrating a challenging side-leaning Pilates exercise on a specialized apparatus, showcasing his innovative fitness methods."</li>
+                <li>When: "A girl performing a Pilates warrior pose against a vibrant sunset, embodying strength and tranquility with the sun's warm glow."</li>
+                <li>Where: "A bright, modern Pilates studio featuring rows of sleek reformers, minimalist decor, and soft, natural lighting, creating a serene and focused workout environment."</li>
+                <li>How: "Check out this awesome Pilates move! A girl's showing off her flexibility, holding one leg way up high while the other points forward like she's about to take off!"</li>
+                <li>Why: "A women feeling happy and energized during a Pilates session."</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Designed by <a href="https://joyfulgiraffe.com">Joyful Giraffe</a></p>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            let sections = document.querySelectorAll('section');
+            sections.forEach(function (section) {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
