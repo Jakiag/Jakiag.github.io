@@ -59,9 +59,12 @@
         }
 
         figure img {
-            max-width: 80%;
+            max-width: 500px; /* Set a fixed max-width instead of percentage */
+            width: auto; /* Allow the width to adjust proportionally */
             height: auto;
             border-radius: 15px; /* Rounded image corners */
+            display: block; /* Make image a block element */
+            margin: 0 auto; /* Center the image */
         }
 
         figcaption {
@@ -75,13 +78,20 @@
             color: white;
             text-align: center;
             padding: 10px 0;
-            position:relative;
-            bottom:0;
-            width:100%;
+            position: relative;
+            bottom: 0;
+            width: 100%;
         }
 
         footer a {
             color: #f8bbd0;
+        }
+        
+        /* Add responsive adjustments for smaller screens */
+        @media (max-width: 768px) {
+            figure img {
+                max-width: 90%; /* Use percentage on smaller screens */
+            }
         }
     </style>
 </head>
@@ -106,7 +116,7 @@
             <h2>Welcome to Pilates Pals!</h2>
             <p>Pilates is a super fun way to get stronger and more flexible! It's gentle and great for everyone.</p>
             <figure>
-                <img src="images/cutepilatespose.jpg" alt="Cute Pilates Pose" width="80%">
+                <img src="images/happy-plus-size-girl-doing-gymnastics-girl-loves-sports-pastel-colors-free-vector.jpg" alt="Cute Pilates Pose">
                 <figcaption>A sweet Pilates pose.</figcaption>
                 <p><em>Prompt: "A happy cartoon-style girl demonstrating a Pilates balance pose, balancing on one hand with her legs extended upwards, in a brightly lit space with a blue mat, showcasing strength and control."</em></p>
             </figure>
@@ -118,7 +128,7 @@
             <h2>Our Pilates Story</h2>
             <p>Pilates was created by a super smart person named Joseph Pilates. He wanted everyone to feel strong and healthy!</p>
             <figure>
-                <img src="images/joseph-pilates.jpg" alt="Joseph Pilates" width="80%">
+                <img src="images/joseph-pilates.jpg" alt="Joseph Pilates">
                 <figcaption> Joseph Pilates.</figcaption>
                 <p><em>Prompt: Joseph Pilates, captured in a vintage photograph, demonstrating a challenging side-leaning Pilates exercise on a specialized apparatus, showcasing his innovative fitness methods.</em></p>
             </figure>
@@ -130,7 +140,7 @@
             <h2>Perfect Pilates Times</h2>
             <p>You can do Pilates whenever you want! Morning or night, it's always a good time!</p>
             <figure>
-                <img src="images/morning-pilates.jpg" alt="Cute Morning Pilates" width="80%">
+                <img src="images/morning-pilates.jpg" alt="Cute Morning Pilates">
                 <figcaption>A happy morning Pilates.</figcaption>
                 <p><em>Prompt: "A girl performing a Pilates warrior pose against a vibrant sunset, embodying strength and tranquility with the sun's warm glow."</em></p>
             </figure>
@@ -142,7 +152,7 @@
             <h2>Magical Pilates Places</h2>
             <p>You can do Pilates anywhere! At home, in a park, or even in a super cute studio!</p>
             <figure>
-                <img src="images/studio.jpg" alt="Cute Pilates Studio" width="80%">
+                <img src="images/studio.jpg" alt="Cute Pilates Studio">
                 <figcaption>A magical Pilates place.</figcaption>
                 <p><em>Prompt: "A bright, modern Pilates studio featuring rows of sleek reformers, minimalist decor, and soft, natural lighting, creating a serene and focused workout environment."</em></p>
             </figure>
@@ -154,7 +164,7 @@
             <h2>Pilates Fun Moves</h2>
             <p>Pilates is all about moving our bodies in a gentle and fun way!</p>
             <figure>
-                <img src="images/fun-pilates.jpg" alt="Pilates Exercise" width="80%">
+                <img src="images/fun-pilates.jpg" alt="Pilates Exercise">
                 <figcaption>A fun Pilates move.</figcaption>
                 <p><em>Prompt: "Check out this awesome Pilates move! A girl's showing off her flexibility, holding one leg way up high while the other points forward like she's about to take off!"</em></p>
             </figure>
@@ -166,7 +176,7 @@
             <h2>Why We Love Pilates</h2>
             <p>Pilates makes us feel super strong and happy! It's like a hug for our bodies!</p>
             <figure>
-                <img src="images/happy-energized.jpg" alt="Cute Pilates Benefits" width="80%">
+                <img src="images/happy-energized.jpg" alt="Cute Pilates Benefits">
                 <figcaption>A happy Pilates pal.</figcaption>
                 <p><em>Prompt: "A women feeling happy and energized during a Pilates session."</em></p>
             </figure>
@@ -176,7 +186,7 @@
 
         <section id="ai-prompts">
             <h2>AI Prompts Used</h2>
-            <p>All images were generated using AI.</p>
+            <p>All captions were generated using AI.</p>
             <ul>
                 <li>Home: "A happy cartoon-style girl demonstrating a Pilates balance pose, balancing on one hand with her legs extended upwards, in a brightly lit space with a blue mat, showcasing strength and control."</li>
                 <li>About: "Joseph Pilates, captured in a vintage photograph, demonstrating a challenging side-leaning Pilates exercise on a specialized apparatus, showcasing his innovative fitness methods."</li>

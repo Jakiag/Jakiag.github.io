@@ -10,6 +10,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     min-height: 100vh;
+    text-align: center;
 }
 
 /* Header Styles */
@@ -22,62 +23,46 @@ header {
     box-sizing: border-box;
 }
 
-header h1 {
-    font-size: 2.0em;
-    margin: 0;
-    font-weight: bold;
-}
-
-/* Navigation Styles */
-header nav, footer nav {
+header nav {
     margin-top: 10px;
 }
 
-header nav a, footer nav a {
-    color: white;
+header nav a {
+    color: aliceblue;
     text-decoration: none;
     margin: 0 15px;
     font-size: 1.1em;
-    padding: 5px 10px;
-    border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.2);
 }
 
-header nav a:hover, footer nav a:hover {
-    background-color: rgba(0, 0, 0, 0.4);
-    color: yellow;
+header nav a:hover {
+    color: deeppink;
 }
 
-/* Main Content Styles */
-main {
-    width: 90%;
-    max-width: 1200px;
-    margin-top: 30px;
-    padding: 20px;
-    text-align: left;
-    box-sizing: border-box;
-}
-
-/* Headings (Merged Duplicate Selectors) */
+/* General Headings - Defined Only Once */
 h1 {
-    font-size: 2.0em;
+    font-size: 2.0em; /* Base font size */
     font-weight: bold;
     text-align: center;
+    color: black; /* Base color */
 }
 
 h2 {
-    font-size: 1.8em;
+    font-size: 1.8em; /* Base font size */
     margin-bottom: 15px;
     color: #d1177e;
 }
 
-h3 {
-    font-size: 1.5em;
-    color: #b10e68;
+/* Main Content Styles */
+main {
+    width: 90%; /* Percentage width for responsiveness */
+    max-width: 1200px; /* Max width to prevent stretching */
+    margin: 0 auto; /* Center content horizontally */
+    padding: 20px;
+    text-align: left; /* Ensure left alignment */
+    box-sizing: border-box;
 }
 
-/* Paragraph Styling */
-p {
+main p {
     font-size: 1.2em;
     line-height: 1.5;
 }
@@ -93,24 +78,58 @@ footer {
     box-sizing: border-box;
 }
 
+footer nav {
+    margin-bottom: 10px;
+}
+
+footer nav a {
+    color: aliceblue;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer nav a:hover {
+    color: deeppink;
+}
+
+footer p {
+    margin-top: 20px;
+    font-size: 1em;
+}
+
 /* Link Styles */
 a {
-    color: #f438a6;
+    color: #ffffff; /* White links for better contrast */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s, text-decoration 0.3s;
 }
 
+/* Hover Effect */
 a:hover {
     color: black;
     text-decoration: underline;
 }
 
+/* Visited Links */
 a:visited {
     color: #fffcfc;
 }
 
-/* Lists */
+/* Additional Fix: Header & Footer Links */
+header nav a, footer nav a {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+header nav a:hover, footer nav a:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: yellow;
+}
+
+/* Section Styles */
 section ul {
     list-style-type: disc;
     padding-left: 20px;
@@ -120,33 +139,58 @@ section li {
     margin-bottom: 5px;
 }
 
-/* Responsive Design */
-@media screen and (max-width: 980px) {
-    main {
-        width: 95%;
-    }
-
-    h1 {
-        font-size: 1.8em;
-    }
-
-    h2 {
-        font-size: 1.6em;
-    }
+h3 {
+    text-align: center;
 }
 
+/* Responsive Design */
+
+/* Mobile Devices (370px - 600px) */
 @media screen and (max-width: 600px) {
     body {
         font-size: 16px;
     }
 
     h1 {
-        font-size: 1.5em;
+        font-size: 1.5em; /* Adjusted for mobile */
     }
 
     h2 {
-        font-size: 1.4em;
+        font-size: 1.4em; /* Adjusted for mobile */
     }
+
+    main {
+        width: 95%; /* Adjust width for small devices */
+    }
+}
+
+/* Tablet Devices (601px - 980px) */
+@media screen and (min-width: 601px) and (max-width: 980px) {
+    h1 {
+        font-size: 1.8em; /* Adjusted for tablets */
+    }
+
+    h2 {
+        font-size: 1.6em; /* Adjusted for tablets */
+    }
+
+    main {
+        width: 90%; /* Adjust width for tablets */
+    }
+}
+
+/* Desktop Devices (981px and above) */
+@media screen and (min-width: 981px) {
+    /* Base h1 and h2 styles are already applied for desktop */
+    main {
+        width: 90%; 
+    }
+}
+
+.styled-image {
+    border: 0;
+    width: 88px;
+    height: 31px;
 }
 
 
