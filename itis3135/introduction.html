@@ -10,22 +10,7 @@
 </head>
 <body>
   <header>
-    <h1> Jakia Gary Joyful Giraffe || ITIS 3135 </h1>
-    <nav>
-        <a href="./">Home</a>
-        <a href="introduction.html">Introduction</a>
-        <a href="contract.html">Contract</a>
-        <a href="about.html">About</a>
-        <a href="hobbies/hobby.html">Pilates Pals</a>
-
-        
-
-    </nav>
-
-    <nav class="bad-nav">
-        <a href="stuff/CRAPPY%20PAGE.html">Crappy Page</a>
-    </nav>
-
+    <div data-include="components/header.html"></div>
   </header>  
   <main>
     <h2>Introduction</h2>
@@ -46,19 +31,13 @@
     </ul>
 </main>
   <footer>
-        <nav>
-            <a href="../index.html">CLT Homepage</a>
-            <a href="https://github.com/Jakiag">GitHub</a>
-            <a href="https://github.com/Jakiag/Jakiag.github.io">GitHub.io</a>
-            <a href="https://jakiag.github.io/itis3135/">ITIS3135.io</a>
-            <a href="https://www.freecodecamp.org/Jgary10">Codecademy</a>
-            <a href="https://www.linkedin.com/in/jakia-gary-6414332ba/">LinkedIn</a>
-            
-
-        </nav>
-        <p>Page Built by <a href="joyfulgiraffe.com">Joyful Giraffe Enterprises</a>&copy; 2025 </p>
-    
-  </footer>
-    
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/ess-validator/validator?uri=" + location.href);
+    </script>
+    <script src="scripts/HTMLInclude.min.js"></script>
 </body>
 </html>
