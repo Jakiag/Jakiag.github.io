@@ -1,0 +1,90 @@
+/* slideshow.css */
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 80%; /* Make the container wider */
+    position: relative;
+    margin: 20px auto; /* Center horizontally with top margin */
+    background-color: #e0ffff; /* Light cyan background */
+    padding: 20px; /* Add some padding around the slideshow */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+/* Center the images within the container */
+.mySlides img {
+    display: block; /* Remove extra space below inline images */
+    max-width: 100%; /* Ensure image doesn't exceed container width */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto; /* Center horizontally */
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* Caption text */
+.caption {
+    color: #333; /* Adjust caption color */
+    font-size: 1em;
+    padding: 10px 12px;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+    box-sizing: border-box;
+}
+
+/* Image list (letter navigation) */
+.image-list {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.image-list ul {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+}
+
+.image-list li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.image-list a {
+    color: #f438a6; /* Link color */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 5px 8px;
+    border: 1px solid #f438a6; /* Optional border */
+    border-radius: 5px; /* Optional rounded corners */
+    background-color: #ffb5d6; /* Optional background */
+}
+
+.image-list a:hover {
+    color: black;
+    background-color: #f438a6;
+    border-color: black;
+}
