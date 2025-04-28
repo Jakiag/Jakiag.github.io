@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joyful Giraffe Enterprises || Build Your Own Intro</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    
+    <main>
+        <h2>Build Your Own Introduction</h2>
+        
+        <div id="form-container">
+            <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>
+            
+            <form id="intro-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" value="Jakia Gary" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="mascot">Mascot:</label>
+                    <input type="text" id="mascot" name="mascot" value="Joyful Giraffe" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="image">Image (PNG or JPG only):</label>
+                    <input type="file" id="image" name="image" accept=".jpg, .jpeg, .png" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="image-caption">Image Caption:</label>
+                    <input type="text" id="image-caption" name="image-caption" value="My professional headshot" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="personal-background">Personal Background:</label>
+                    <textarea id="personal-background" name="personal-background" rows="4" required>I'm a passionate student and entrepreneur from Charlotte, NC.</textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="professional-background">Professional Background:</label>
+                    <textarea id="professional-background" name="professional-background" rows="4" required>I created Joyful Giraffe Enterprises as a way to bring creativity and positivity into everyday life.</textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="academic-background">Academic Background:</label>
+                    <textarea id="academic-background" name="academic-background" rows="4" required>Currently pursuing a degree in Computer Science at UNC Charlotte.</textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="web-background">Background in Web Development:</label>
+                    <textarea id="web-background" name="web-background" rows="4" required>I have experience with HTML, CSS, and JavaScript. This course is helping me expand my skills.</textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="computer-platform">Primary Computer Platform:</label>
+                    <input type="text" id="computer-platform" name="computer-platform" value="Windows 11" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Courses Currently Taking:</label>
+                    <div id="courses-container">
+                        <div class="course-entry">
+                            <input type="text" class="course" name="course" value="ITIS 3135 - Web App Design and Development" required>
+                            <button type="button" class="delete-course">Delete</button>
+                        </div>
+                    </div>
+                    <button type="button" id="add-course">Add Another Course</button>
+                </div>
+                
+                <div class="form-group">
+                    <label for="funny-thing">Funny Thing About You:</label>
+                    <textarea id="funny-thing" name="funny-thing" rows="2">I collect giraffe-themed items from around the world!</textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="anything-else">Anything Else to Share:</label>
+                    <textarea id="anything-else" name="anything-else" rows="2">I love hiking and photography in my free time.</textarea>
+                </div>
+                
+                <div class="form-group checkbox">
+                    <input type="checkbox" id="agreement" name="agreement" required>
+                    <label for="agreement">I understand that what is on this page is not password protected and I will not put anything here that I don't want publicly available.</label>
+                </div>
+                
+                <div class="form-buttons">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </div>
+            </form>
+        </div>
+        
+        <div id="result-container" style="display: none;">
+            <!-- Results will be displayed here after form submission -->
+            <button id="reset-form">Reset Form</button>
+        </div>
+    </main>
+    
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    
+    <script src="scripts/HTMLInclude.js"></script>
+    <script src="scripts/survey.js"></script>
+</body>
+</html>

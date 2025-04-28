@@ -11,6 +11,14 @@ body {
     align-items: center;
     min-height: 100vh;
     text-align: center;
+    font-size: 16px; /* Base font size */
+}
+
+/* CSS Variables for responsive font sizes */
+:root {
+    --h1-font-size: 2.0em;
+    --h2-font-size: 1.8em;
+    --main-width: 90%;
 }
 
 /* Header Styles */
@@ -40,25 +48,29 @@ header nav a:hover {
 
 /* General Headings - Defined Only Once */
 h1 {
-    font-size: 2.0em; /* Base font size */
+    font-size: var(--h1-font-size);
     font-weight: bold;
     text-align: center;
-    color: black; /* Base color */
+    color: black;
 }
 
 h2 {
-    font-size: 1.8em; /* Base font size */
+    font-size: var(--h2-font-size);
     margin-bottom: 15px;
     color: #d1177e;
 }
 
+h3 {
+    text-align: center;
+}
+
 /* Main Content Styles */
 main {
-    width: 90%; /* Percentage width for responsiveness */
-    max-width: 1200px; /* Max width to prevent stretching */
-    margin: 0 auto; /* Center content horizontally */
+    width: var(--main-width);
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
-    text-align: left; /* Ensure left alignment */
+    text-align: left;
     box-sizing: border-box;
 }
 
@@ -99,7 +111,7 @@ footer p {
 
 /* Link Styles */
 a {
-    color: #ffffff; /* White links for better contrast */
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s, text-decoration 0.3s;
@@ -139,51 +151,31 @@ section li {
     margin-bottom: 5px;
 }
 
-h3 {
-    text-align: center;
-}
-
 /* Responsive Design */
-
 /* Mobile Devices (370px - 600px) */
 @media screen and (max-width: 600px) {
-    body {
-        font-size: 16px;
-    }
-
-    h1 {
-        font-size: 1.5em; /* Adjusted for mobile */
-    }
-
-    h2 {
-        font-size: 1.4em; /* Adjusted for mobile */
-    }
-
-    main {
-        width: 95%; /* Adjust width for small devices */
+    :root {
+        --h1-font-size: 1.5em;
+        --h2-font-size: 1.4em;
+        --main-width: 95%;
     }
 }
 
 /* Tablet Devices (601px - 980px) */
 @media screen and (min-width: 601px) and (max-width: 980px) {
-    h1 {
-        font-size: 1.8em; /* Adjusted for tablets */
-    }
-
-    h2 {
-        font-size: 1.6em; /* Adjusted for tablets */
-    }
-
-    main {
-        width: 90%; /* Adjust width for tablets */
+    :root {
+        --h1-font-size: 1.8em;
+        --h2-font-size: 1.6em;
+        --main-width: 90%;
     }
 }
 
 /* Desktop Devices (981px and above) */
 @media screen and (min-width: 981px) {
-    /* Base h1 and h2 styles are already applied for desktop */
-    main {
-        width: 90%; 
+    :root {
+        --h1-font-size: 2.0em;
+        --h2-font-size: 1.8em;
+        --main-width: 90%;
     }
 }
 
@@ -191,6 +183,99 @@ h3 {
     border: 0;
     width: 88px;
     height: 31px;
+}
+
+.profile-image {
+    width: 539px;
+    height: auto; /* Maintains aspect ratio */
+    max-width: 100%; /* Makes image responsive */
+}
+
+/* Form styling */
+#intro-form {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-group.checkbox {
+    display: flex;
+    align-items: flex-start;
+}
+
+.form-group.checkbox input {
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.course-entry {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.course-entry input {
+    flex-grow: 1;
+    margin-right: 10px;
+    box-sizing: border-box;
+}
+
+.delete-course {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#add-course {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.form-buttons {
+    margin-top: 30px;
+}
+
+.form-buttons input {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-buttons input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.form-buttons input[type="reset"] {
+    background-color: #f44336;
+    color: white;
 }
 
 

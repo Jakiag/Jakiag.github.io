@@ -1,0 +1,84 @@
+/* General Body and Header Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+header {
+    background-color: #f45b69;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Buttons */
+.workout-btn, .join-challenge {
+    background-color: #f45b69;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.workout-btn:hover, .join-challenge:hover {
+    background-color: #fdb5d3;
+}
+
+/* Form Styles */
+form {
+    background-color: #fff2f8;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+form label {
+    display: block;
+    margin: 10px 0;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #f45b69;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #fdb5d3;
+}
+
+/* Progress Log */
+#progress-display ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#progress-display ul li {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}

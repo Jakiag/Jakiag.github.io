@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jakia Gary Joyful Giraffe || HTML Tables</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <style>
+        /* Table styling */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        
+        /* Make header row darker */
+        thead th {
+            background-color: #444;
+            color: white;
+        }
+        
+        /* Alternating row colors */
+        tbody tr:nth-child(odd) {
+            background-color: #f2f2f2;
+        }
+        
+        tbody tr:nth-child(even) {
+            background-color: #e6e6e6;
+        }
+        
+        /* Hover effect */
+        tbody tr:hover {
+            background-color: #ddd;
+        }
+        
+        /* Total row styling */
+        tfoot th, tfoot td {
+            background-color: #f9f9f9;
+            font-weight: bold;
+        }
+        
+        figure {
+            margin: 0;
+            padding: 0;
+        }
+        
+        figcaption {
+            font-weight: bold;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>  
+    
+    <main>
+        <h2>HTML Tables</h2>
+        
+        <h3>My Tabular Data</h3>
+        <ol>
+            <li>Sarah Johnson - sjohnson@joyfulgiraffedesign.com - 7 years</li>
+            <li>Michael Chen - mchen@gmail.com - 3 years</li>
+            <li>Priya Patel - ppatel@yahoo.com - 5 years</li>
+            <li>James Wilson - jwilson@joyfulgiraffedesign.com - 12 years</li>
+            <li>Maria Rodriguez - mrodriguez@outlook.com - 2 years</li>
+            <li>David Kim - dkim@gmail.com - 8 years</li>
+            <li>Olivia Thompson - othompson@joyfulgiraffedesign.com - 4 years</li>
+        </ol>
+        
+        <h3>Employee Data in Simple Table</h3>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Years of Service</th>
+            </tr>
+            <tr>
+                <td>Sarah Johnson</td>
+                <td>sjohnson@joyfulgiraffedesign.com</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>Michael Chen</td>
+                <td>mchen@gmail.com</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>Priya Patel</td>
+                <td>ppatel@yahoo.com</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>James Wilson</td>
+                <td>jwilson@joyfulgiraffedesign.com</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>Maria Rodriguez</td>
+                <td>mrodriguez@outlook.com</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>David Kim</td>
+                <td>dkim@gmail.com</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>Olivia Thompson</td>
+                <td>othompson@joyfulgiraffedesign.com</td>
+                <td>4</td>
+            </tr>
+        </table>
+        
+        <h3>Employee Data in Complex Table</h3>
+        <figure>
+            <figcaption>Employee Information</figcaption>
+            <table>
+                <thead>
+                    <tr>
+                        <th id="category">Category</th>
+                        <th id="name">Name</th>
+                        <th id="email">Email</th>
+                        <th id="years">Years of Service</th>
+                        <th id="salary">Monthly Salary</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2" headers="category">Management</td>
+                        <td headers="name">Sarah Johnson</td>
+                        <td headers="email">sjohnson@joyfulgiraffedesign.com</td>
+                        <td headers="years">7</td>
+                        <td headers="salary">$8,500</td>
+                    </tr>
+                    <tr>
+                        <td headers="name">James Wilson</td>
+                        <td headers="email">jwilson@joyfulgiraffedesign.com</td>
+                        <td headers="years">12</td>
+                        <td headers="salary">$9,200</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3" headers="category">Design</td>
+                        <td headers="name">Michael Chen</td>
+                        <td headers="email">mchen@gmail.com</td>
+                        <td headers="years">3</td>
+                        <td headers="salary">$5,800</td>
+                    </tr>
+                    <tr>
+                        <td headers="name">Priya Patel</td>
+                        <td headers="email">ppatel@yahoo.com</td>
+                        <td headers="years">5</td>
+                        <td headers="salary">$6,200</td>
+                    </tr>
+                    <tr>
+                        <td headers="name">David Kim</td>
+                        <td headers="email">dkim@gmail.com</td>
+                        <td headers="years">8</td>
+                        <td headers="salary">$7,500</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" headers="category">Marketing</td>
+                        <td headers="name">Maria Rodriguez</td>
+                        <td headers="email">mrodriguez@outlook.com</td>
+                        <td headers="years">2</td>
+                        <td headers="salary">$4,800</td>
+                    </tr>
+                    <tr>
+                        <td headers="name">Olivia Thompson</td>
+                        <td headers="email">othompson@joyfulgiraffedesign.com</td>
+                        <td headers="years">4</td>
+                        <td headers="salary">$5,500</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="3">Total Years of Service</th>
+                        <td headers="years">41</td>
+                        <td headers="salary">$47,500</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </figure>
+    </main>
+    
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <script src="scripts/HTMLInclude.js"></script>
+</body>
+</html>
+
