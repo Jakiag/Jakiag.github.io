@@ -216,12 +216,12 @@ section li {
     box-sizing: border-box;
 }
 
-.form-group.checkbox {
+.checkbox-group {
     display: flex;
     align-items: flex-start;
 }
 
-.form-group.checkbox input {
+.checkbox-group input {
     margin-top: 5px;
     margin-right: 10px;
 }
