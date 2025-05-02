@@ -9,10 +9,57 @@
     <script src="https://cdn.jsdelivr.net/npm/p5@1.8.0/lib/p5.js"></script>
     <!-- Your sketch file -->
     <script src="scripts/sketch.js"></script>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <style>
+        /* Responsive canvas container styles */
+        #canvas-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+        
+        /* Make sure the canvas is responsive */
+        canvas {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        /* Center the main content */
+        main {
+            text-align: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Responsive navigation */
+        header nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        /* Media query for smaller screens */
+        @media (max-width: 768px) {
+            header nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            h1, h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>ITIS 3135 | Your Name</h1>
+        <h1>ITIS 3135 | Jakia Gary</h1>
         <nav>
             <a href="./">Home</a>
             <a href="introduction.html">Introduction</a>
@@ -27,6 +74,9 @@
             <a href="review1.html">Peerreview1</a>
             <a href="review2.html">Peerreview2</a>
             <a href="drawing.html">Drawing</a>
+        </nav>
+        <nav class="bad-nav">
+            <a href="stuff/CRAPPY%20PAGE.html">Crappy Page</a>
         </nav>
     </header>
     

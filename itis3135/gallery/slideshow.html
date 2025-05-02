@@ -4,76 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slideshow Gallery</title>
-    <link rel="stylesheet" href="default.css"> <link rel="stylesheet" href="slideshow.css"> <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../styles/default.css">
+    <link rel="stylesheet" href="slideshow.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-
-    <!-- Include your header dynamically -->
-    <div id="header"></div>
-
-    <div class="slideshow-container">
-        <!-- Slideshow images -->
-        <div class="mySlides fade">
-            <img src="images/jelly.jpg" alt="Jelly">
-            <div class="caption">J - for Jelly</div>
+    <header>
+        <h1>ITIS 3135 | Jakia Gary</h1>
+        <nav>
+            <a href="../">Home</a>
+            <a href="../introduction.html">Introduction</a>
+            <a href="../contract.html">Contract</a>
+            <a href="../Whimsicalpage">WhimsicalPage</a>
+            <a href="../business.html">Business</a>
+            <a href="../hobby/">Pilates Pals</a>
+            <a href="../firstscripts.html">Forms</a>
+            <a href="../website_evaluations.html">Evaluations</a>
+            <a href="slideshow.html">Slideshow</a>
+            <a href="../Projectoverview/">Client Overview</a>
+            <a href="../review1.html">Peerreview1</a>
+            <a href="../review2.html">Peerreview2</a>
+            <a href="../project_overview.html">Projectoverview</a>
+            <a href="../drawing.html">Drawing</a>
+        </nav>
+        <nav class="bad-nav">
+            <a href="../stuff/CRAPPY%20PAGE.html">Crappy Page</a>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>Slideshow Gallery</h2>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="images/jelly.jpg" alt="Jelly">
+                <div class="caption">J - for Jelly</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="images/apple.jpg" alt="Apple">
+                <div class="caption">A - for Apple</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="images/kite.jpg" alt="Kite">
+                <div class="caption">K - for Kite</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="images/ice.jpg" alt="Ice">
+                <div class="caption">I - for Ice</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="images/airplane.jpg" alt="Airplane">
+                <div class="caption">A - for Airplane</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="images/grapes.jpg" alt="Grapes">
+                <div class="caption">G - for Grapes</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="images/anchor.jpg" alt="Anchor">
+                <div class="caption">A - for Anchor</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="images/rose.jpg" alt="Rose">
+                <div class="caption">R - for Rose</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="images/yo-yo.jpg" alt="Yo-Yo">
+                <div class="caption">Y - for Yo-Yo</div>
+            </div>
         </div>
-        <div class="mySlides fade">
-            <img src="images/apple.jpg" alt="Apple">
-            <div class="caption">A - for Apple</div>
+        
+        <div class="image-list">
+            <ul>
+                <li><a href="#" data-index="0">J</a></li>
+                <li><a href="#" data-index="1">A</a></li>
+                <li><a href="#" data-index="2">K</a></li>
+                <li><a href="#" data-index="3">I</a></li>
+                <li><a href="#" data-index="4">A</a></li>
+                <li><a href="#" data-index="5">G</a></li>
+                <li><a href="#" data-index="6">A</a></li>
+                <li><a href="#" data-index="7">R</a></li>
+                <li><a href="#" data-index="8">Y</a></li>
+            </ul>
         </div>
-        <div class="mySlides fade">
-            <img src="images/kite.jpg" alt="Kite">
-            <div class="caption">K - for Kite</div>
-        </div>
-        <div class="mySlides fade">
-            <img src="images/ice.jpg" alt="Ice">
-            <div class="caption">I - for Ice</div>
-        </div>
-        <div class="mySlides fade">
-            <img src="images/airplane.jpg" alt="Airplane">
-            <div class="caption">A - for Airplane</div>
-        </div>
-        <div class="mySlides fade">
-            <img src="images/grapes.jpg" alt="Grapes">
-            <div class="caption">G - for Grapes</div>
-        </div>
-        <div class="mySlides fade">
-            <img src="images/anchor.jpg" alt="Anchor">
-            <div class="caption">A - for Anchor</div>
-        </div>
-        <div class="mySlides fade">
-            <img src="images/rose.jpg" alt="Rose">
-            <div class="caption">R - for Rose</div>
-        </div>
-        <div class="mySlides fade">
-            <img src="images/yo-yo.jpg" alt="Yo-Yo">
-            <div class="caption">Y - for Yo-Yo</div>
-        </div>
-    </div>
-
-    <!-- List of clickable images (letter navigation) -->
-    <div class="image-list">
-        <ul>
-            <li><a href="#" data-index="0">J</a></li>
-            <li><a href="#" data-index="1">A</a></li>
-            <li><a href="#" data-index="2">K</a></li>
-            <li><a href="#" data-index="3">I</a></li>
-            <li><a href="#" data-index="4">A</a></li>
-            <li><a href="#" data-index="5">G</a></li>
-            <li><a href="#" data-index="6">A</a></li>
-            <li><a href="#" data-index="7">R</a></li>
-            <li><a href="#" data-index="8">Y</a></li>
-        </ul>
-    </div>
-
-    <!-- Include your footer dynamically -->
-    <div id="footer"></div>
-
+    </main>
+    
+    <footer>
+        <nav>
+            <a href="../index.html">CLT Homepage</a> |
+            <a href="https://github.com/Jakiag">GitHub.com</a> |
+            <a href="https://jakiag.github.io/">GitHub.io</a> |
+            <a href="https://www.linkedin.com/in/jakia-gary-6414332ba/">LinkedIn</a> |
+            <a href="https://www.freecodecamp.org/Jgary10">FreeCodeCamp</a> |
+            <a href="https://www.codecademy.com/profiles/jgary10">Codeacademy</a>
+        </nav>
+        <p>Page Built by <a href="https://joyfulgiraffe.com/">Joyful Giraffe Enterprises</a> &copy; 2025</p>
+    </footer>
+    
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     <script>
         $(document).ready(function() {
             let slideIndex = 0;
-
-            // Function to show the slides
+            
             function showSlides() {
                 let slides = $(".mySlides");
                 slides.each(function(index) {
@@ -83,19 +114,17 @@
                 if (slideIndex > slides.length) {slideIndex = 1}
                 $(slides[slideIndex - 1]).css("display", "block");
             }
-
-            // Click event to jump to a specific slide
-            $(".image-list a").click(function() {
-                slideIndex = $(this).data("index");
+            
+            $(".image-list a").click(function(e) {
+                e.preventDefault();
+                slideIndex = parseInt($(this).data("index"));
                 showSlides();
             });
-
-            // Change slide every 3 seconds
+            
             setInterval(showSlides, 3000);
-
-            // Initial call to display the first slide
             showSlides();
         });
     </script>
 </body>
 </html>
+
