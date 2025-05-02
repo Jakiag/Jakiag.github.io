@@ -54,7 +54,6 @@ form label {
 
 form input, form select {
     width: 100%;
-    padding: 10px;
     margin-bottom: 20px;
     border-radius: 5px;
 }
@@ -82,3 +81,33 @@ button[type="submit"]:hover {
     font-size: 1.1rem;
     margin: 10px 0;
 }
+
+.small-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+.home-page {
+    padding: 20px;
+}
+.slideshow-container {
+    position: relative;
+    max-width: 500px; /* Set a good max width */
+    height: 300px;    /* Set a good height */
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Makes sure the image covers the box nicely */
+    border-radius: 10px;
+}
+
+

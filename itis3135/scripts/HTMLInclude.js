@@ -1,4 +1,4 @@
-/*! HTMLInclude v1.1.1 | MIT License | github.com/paul-browne/HTMLInclude */ 
+ 
 !function(w, d) {
     if (!w.HTMLInclude) {
         w.HTMLInclude = function() {
