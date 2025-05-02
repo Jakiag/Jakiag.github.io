@@ -41,34 +41,3 @@ document.addEventListener('DOMContentLoaded', function() {
         `;
     });
 });
-// Sample function to add a workout to the list
-function addWorkoutToLog(date, type, exerciseDetails) {
-    const workoutList = document.getElementById('workout-log-list');
-    const noWorkoutsMessage = document.getElementById('no-workouts-message');
-    
-    // Hide the "no workouts" message if it's showing
-    if (noWorkoutsMessage) {
-        noWorkoutsMessage.style.display = 'none';
-    }
-    
-    // Create new workout entry
-    const listItem = document.createElement('li');
-    listItem.className = 'workout-entry';
-    
-    // Add workout information
-    listItem.innerHTML = `
-        <div class="workout-date">${date}</div>
-        <div class="workout-type">${type}</div>
-        <div class="workout-details">
-            <span class="exercise">${exerciseDetails.name}</span>: ${exerciseDetails.description}
-        </div>
-    `;
-    
-    // Add to the beginning of the list (most recent first)
-    workoutList.insertBefore(listItem, workoutList.firstChild);
-}
-
-
-
-
-

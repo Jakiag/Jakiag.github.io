@@ -277,5 +277,12 @@ section li {
     background-color: #f44336;
     color: white;
 }
+.small-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
 
 

@@ -109,5 +109,52 @@ button[type="submit"]:hover {
     object-fit: cover; /* Makes sure the image covers the box nicely */
     border-radius: 10px;
 }
+/* Progress display styling */
+#progress-display {
+    margin: 2rem 0;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+#workout-log-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.workout-entry {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: white;
+    border-left: 4px solid #4CAF50;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.workout-date {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.workout-type {
+    color: #7f8c8d;
+    margin: 0.3rem 0;
+}
+
+.workout-details {
+    margin-top: 0.5rem;
+}
+
+.exercise {
+    color: #3498db;
+    font-weight: 500;
+}
+
+.no-workouts-message {
+    text-align: center;
+    color: #7f8c8d;
+    font-style: italic;
+}
+
 
 

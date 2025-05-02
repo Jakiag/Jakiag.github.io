@@ -13,7 +13,6 @@
         <h1>Track Your Progress</h1>
         <nav>
             <a href="index.html">Home</a>
-            <a href="project_overview.html">Overview</a>
             <a href="workouts.html">Workouts</a>
             <a href="progress.html">Progress</a>
             <a href="challenges.html">Challenges</a>
@@ -27,11 +26,11 @@
         <section>
             <h3>Workout Log</h3>
             <form id="workout-log-form">
-                <label for="workout-date">Date:</label>
-                <input type="date" id="workout-date" required>
-
+                <label for="workout-date">Date (YYYY-MM-DD):</label>
+<input type="text" id="workout-date" pattern="\d{4}-\d{2}-\d{2}" placeholder="YYYY-MM-DD" required>
                 <label for="workout-type">Workout Type:</label>
                 <select id="workout-type" required>
+                    <option value="">-- Select workout type --</option>
                     <option value="strength">Strength Training</option>
                     <option value="cardio">Cardio</option>
                     <option value="flexibility">Flexibility</option>
@@ -46,9 +45,35 @@
 
         <section id="progress-display">
             <h3>Your Progress</h3>
-            <ul id="workout-log-list">
-                <!-- List of logged workouts will appear here -->
-            </ul>
+            <div class="progress-container">
+                <ul id="workout-log-list">
+                    <!-- Sample workout entries (these will be dynamically generated in a real app) -->
+                    <li class="workout-entry">
+                        <div class="workout-date">2023-11-01</div>
+                        <div class="workout-type">Strength Training</div>
+                        <div class="workout-details">
+                            <span class="exercise">Bench Press</span>: 3 sets × 10 reps
+                        </div>
+                    </li>
+                    <li class="workout-entry">
+                        <div class="workout-date">2023-11-03</div>
+                        <div class="workout-type">Cardio</div>
+                        <div class="workout-details">
+                            <span class="exercise">Running</span>: 5 km in 30 minutes
+                        </div>
+                    </li>
+                    <li class="workout-entry">
+                        <div class="workout-date">2023-11-05</div>
+                        <div class="workout-type">Flexibility</div>
+                        <div class="workout-details">
+                            <span class="exercise">Yoga</span>: 45 minute session
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <p class="no-workouts-message" id="no-workouts-message" style="display: none;">
+                No workouts logged yet. Start tracking your fitness journey today!
+            </p>
         </section>
     </main>
 
